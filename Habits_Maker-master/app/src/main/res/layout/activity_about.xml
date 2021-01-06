@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/tv_title_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginRight="222dp"
+        android:text="About Us"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_motto_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:text="Our Motto:"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:text="It's easier than you think"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_motto_title" />
+
+    <TextView
+        android:id="@+id/tv_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="This application was created because of an idea\nthat sparked to us. We wanted to make a project\nthat can improve the quality of everyday life for\nanyone in a form of a casual game. According\n to research, it takes a minimum of 22 days in a\nrow to make a new habit. Based on this,\nwe decided to incentivize and motivate people in\na simple, engaging and effective way to become\nthe best self they want to be.\n\nThat is how HabitMaker came to be!\n\nWe are based in Toronto. There is 5 of us and we\nare all 3rd year students in George Brown College.\n\nFeel free to contact us at habitmaker@gmail.com\nif you have any suggestions or concerns."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_motto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

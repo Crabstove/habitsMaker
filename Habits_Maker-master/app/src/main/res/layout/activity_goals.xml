@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GoalsActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Goals"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="40dp"
+        android:background="#F7F1F1"
+        android:gravity="center"
+        android:text="Do your habit for 22 days and get a bronze medal! Warning: Miss a day, the count will reset to day 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <FrameLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="446dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:id="@+id/imageButtonHome"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/imageButtonProfile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/imageButtonHome"
+                android:background="@drawable/profile" />
+
+            <ImageButton
+                android:id="@+id/imageButtonGoals"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/imageButtonProfile"
+                android:background="@drawable/goal" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChallenge"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/imageButtonGoals"
+                android:background="@drawable/challenge" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSettings"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/imageButtonChallenge"
+                android:background="@drawable/setting" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goal_look"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBarOnGoal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/habit_name_on_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarOnGoal"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

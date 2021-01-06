@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactListActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Staham"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Connor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dean"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lucas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Maria"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nistha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Peter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Oreo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Broxah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Anna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <SearchView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#F3F0F0"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox14"
+        app:layout_constraintVertical_bias="0.467" />
+</androidx.constraintlayout.widget.ConstraintLayout>

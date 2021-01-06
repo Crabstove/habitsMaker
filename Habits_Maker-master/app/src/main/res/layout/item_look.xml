@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_look"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/itemLook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:width="300dp"
+        android:height="60dp"
+        android:background="#FFD730"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/buildOrQuit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/itemLook"
+        android:height="30dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:textSize="18sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/itemLook"
+            android:layout_below="@+id/buildOrQuit"
+            android:background="@android:color/holo_green_light">
+
+            <TextView
+                android:id="@+id/day_count"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Day"
+                android:textColor="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChallengeActivity">
+
+    <CheckBox
+        android:id="@+id/cbHabit1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F3"
+        android:text='Reading the book "Master the day"'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <CheckBox
+        android:id="@+id/cbHabit2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F3"
+        android:text="Do 100 Pushups everyday"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHabit1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cbHabit3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F3"
+        android:text="Listening English 20 minutes everyday"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHabit2"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="327dp"
+        android:background="#F7F7F3"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHabit2"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMessage"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHome"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <ImageButton
+        android:id="@+id/imageButtonProfile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonGoals"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGoals"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/goal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonChallenge"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <ImageButton
+        android:id="@+id/imageButtonChallenge"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/challenge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSettings"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonGoals"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSettings"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonChallenge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

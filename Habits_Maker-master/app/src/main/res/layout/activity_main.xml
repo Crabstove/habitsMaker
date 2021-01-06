@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="100dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/imageButtonHome"
+            android:layout_width="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="70dp"
+            android:background="@drawable/home"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imageButtonHome"
+            android:background="@drawable/profile"/>
+        <ImageButton
+            android:id="@+id/imageButtonGoals"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imageButtonProfile"
+            android:background="@drawable/goal"/>
+        <ImageButton
+            android:id="@+id/imageButtonChallenge"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imageButtonGoals"
+            android:background="@drawable/challenge"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonSettings"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@+id/imageButtonChallenge"
+            android:background="@drawable/setting"/>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

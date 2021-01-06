@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/habit_name_text"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_blue_bright"
+            android:gravity="center"
+            android:text="Habit Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/habit_name"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/habit_name_text"
+            android:background="#FDD835"
+            android:gravity="center"
+            android:text="name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/dayText"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/habit_name_text"
+            android:background="#FDD835">
+
+            <TextView
+                android:id="@+id/day_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/day_done"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/habit_name"
+            android:layout_toRightOf="@+id/dayText"
+            android:background="@android:color/holo_blue_bright">
+
+            <CheckBox
+                android:id="@+id/cb_done"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Done"
+                android:textSize="20sp" />
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress within 22 days"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="334dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/checkedMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
